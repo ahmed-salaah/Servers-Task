@@ -1,6 +1,5 @@
 //
 //  WebServiceCalling.h
-//  Qiyas
 //
 //  Created by Ahmed Salah on 4/13/14.
 //  Copyright (c) 2014 ITWorx. All rights reserved.
@@ -18,38 +17,17 @@
 
 typedef enum REQUESTED_ENUM {
     login,
-    signUp ,
-    User,
-    Products,
-    MostSold,
-    Dog,
-    DogFood,
-    Treat,
-    Rawhid,
-    Supplement,
-    FleasAndTick,
-    Shampoo,
-    Brunche,
-    AddToFav,
-    RemoveFromFav,
-    Search,
-    Tips,
-    Custom,
-    UserFavorits,
-    ForgotPass,
-    NewOrder,
-    Adds
+  
 } REQUESTED_ENUM;
 
 typedef void (^DataResponseBlock)(NSData *responseData);
-typedef void (^DataResponseParsingBlock)(NSArray *responseData);
+typedef void (^DataResponseParsingBlock)(id responseData);
 
 @property (nonatomic, readwrite) REQUESTED_ENUM myRequest;
 @property (nonatomic, assign)BOOL download;
 
 -(id)initWithURLString:(REQUESTED_ENUM)url withID:(NSString *)idString andDomainURL:(NSString *)domainURL;
 -(void)getData:(DataResponseParsingBlock)completionBlock;
--(void)getDataForAds:(DataResponseParsingBlock)completionBlock;
 
 -(void)postData:(DataResponseParsingBlock)completionBlock;
 -(void)fileDownloadWithUrl:(NSString*)url andfileName:(NSString*)output;

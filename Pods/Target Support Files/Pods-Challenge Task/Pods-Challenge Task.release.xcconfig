@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/HexColors" "${PODS_ROOT}/Headers/Public/MKNetworkKit" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/TSMessages"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/HexColors" "${PODS_CONFIGURATION_BUILD_DIR}/MKNetworkKit" "${PODS_CONFIGURATION_BUILD_DIR}/Reachability" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/TSMessages"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/HexColors" -isystem "${PODS_ROOT}/Headers/Public/MKNetworkKit" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/TSMessages"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"HexColors" -l"MKNetworkKit" -l"Reachability" -l"SVProgressHUD" -l"TSMessages" -framework "CFNetwork" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,32 @@
+PODS:
+  - HexColors (2.2.1)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - Reachability (3.1.1)
+  - SVProgressHUD (2.1.2)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+
+DEPENDENCIES:
+  - MKNetworkKit (~> 0.87)
+  - SVProgressHUD
+  - TSMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HexColors
+    - MKNetworkKit
+    - Reachability
+    - SVProgressHUD
+    - TSMessages
+
+SPEC CHECKSUMS:
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  MKNetworkKit: 60ad3c83b62183e40ba75ce772c9427c25b520de
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+
+PODFILE CHECKSUM: bf69424fd4cef62f28257c466c64835beba45a80
+
+COCOAPODS: 1.5.3

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewControllers/ServersViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    UINavigationController *navigation;
+    ServersViewController *serverViewcontroller = [[ServersViewController alloc] initWithNibName:@"ServersViewController" bundle:nil];
+    navigation = [[UINavigationController alloc] initWithRootViewController:serverViewcontroller];
+    self.window.rootViewController = navigation;
+
     return YES;
 }
 
